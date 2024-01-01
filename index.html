@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the User!</title>
+
+    <style>
+
+        *{
+            font-size: 60px;
+            color: white;
+            font-weight: 900;
+        }
+
+        body{
+            background: url(./pexels-adrien-olichon-2931246.jpg) center center/cover no-repeat;
+        }
+
+        .top {
+            height:50px; 
+            width:100%;
+            margin-bottom: 100px;
+            
+        }
+
+        .header{
+            height: 2000px;
+        }   
+
+        .container {
+            height:50px;
+            margin-bottom: 500px; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">2024 goals?</div>
+    <div class="header">NEVER LOSE FOCUS!!!!</div>
+    <div class="container">Happy New Year</div>
+
+
+
+
+    <script>
+
+        // ..... to check for the scroll position
+
+        window.addEventListener('scroll', function(){
+            let scrollposition = window.scrollY || pa;
+            console.log(scrollposition);
+
+            if (scrollposition > 0) {
+                alert('stop scrolling');
+            }
+        });
+
+        // ....TO detect when a user closes a page
+
+        window.addEventListener('beforeunload', function(event){
+            const notification = 'do you really want to close this page?';
+            (event || window.event).returnValue = notification;
+        });
+
+        // my console returns instead: "Changes you made may not be saved." 
+
+    </script>
+</body>
+</html>
